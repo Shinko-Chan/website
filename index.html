@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Student Support</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
+<header>
+    <link rel="stylesheet" href="style.css">
+    <div class="logocontainer">
+        <img class="logo" src="logo.png" alt="website logo">
+    </div>
+    <br><br>
+
+    <div id="homepage">
+        <ul>
+            <li><a href="index.html">Department of Student Support</a></li>
+        </ul>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="Insurance.html">Insurance</a></li>
+            <li><a href="Mentorship.html">Mentorship</a></li>
+            <li><a href="Counselling.html">Counselling</a></li>
+            <li><a href="Financial_Aid.html">Financial Aid</a></li>
+            <li><a href="Quality_Insurance.html">Quality Assurance</a></li>
+            <li><a href="Career_Development.html">Career Development</a></li>
+            <li><a href="Student_Engagement.html">Other</a></li>
+        </ul>
+    </nav>
+    <!--IMAGE CAROUSEL START-->
+    <script>
+        var i = 0;
+        var images = [];
+        var time = 5000;
+
+        //image list
+        images[0] = 'Images/one.jpg';
+        images[1] = 'Images/two.jpg';
+        images[2] = 'Images/two.jpg';
+
+        //change image
+        function changeImg(){
+            document.slide.src = images[i];
+            if(i < images.length - 1){
+                i++;
+            }else{
+                i = 0;
+            }
+
+            setTimeout("changeImg()", time);
+        }
+        window.onload = changeImg;
+    </script>
+    <img name="slide" width="1043" height="400">
+    <!--IMAGE CAROUSEL FINISH-->
+</header>
+<main></main>
+<footer></footer>
+<body>
+</body>
+</html>
+<!--<li><a href="#">Corporate Social Responsibilty</a></li>
+                <li><a href="#">Student Governance/Leadership</a></li>
+                <li><a href="#">Other Services</a></li>
+            
+            <ul class="dropdown">
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Customer Care</a></li>
+                </ul>
+            -->
